@@ -29,7 +29,7 @@ Here we are drawing configuration information off the appsettings.json file (the
 There isn’t really anything here, but this is why I broke out the “logic” functions into a repository that comes back to the controllers via Dependency Injection, we could define unit tests against the repository and have automation validate that functionality – however at it’s current state I would be question the value of it – the “real” endpoints are just using the regex wrapper, and so tests defined in here would either validate that Regex.Match() still works or behavior that is really coming from the regex in the config.  To get on a soapbox I think “bad” testing is worse than no testing, this can be a fantastic approach to improve code quality and speed up delivery, but badly executed they erode trust and waste time (Anecdotally my most ridiculous example was more than 700 unit tests that validated non-nullable objects were in fact not null.  It had 100% code coverage!  Lots of it didn’t work, but the code coverage!)
 ## Authentication/Authorization:
 Normally something to be addressed, which was specifically called out as unneeded here – I bring it up because I think this should be included in the initial requirements, retrofitting multi-tenancy access control to applications is not my favorite thing in the world.
-##Logging:
+## Logging:
 Something that would normally need to be addressed but I really just skipped it given the requirements.
 
 ## Todo
