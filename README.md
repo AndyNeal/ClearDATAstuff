@@ -3,10 +3,10 @@ You will receive a string as input, potentially a mixture of upper and lower cas
 
 ## Live version
 I went ahead and spun this up on an EC2 instance I had handy
-SwaggerUI;
-https://validator.andy-neal.com/swagger/index.html
-OpenAPI json doc
-https://validator.andy-neal.com/swagger/v1/swagger.json
+
+[SwaggerUI](https://validator.andy-neal.com/swagger/index.html)
+
+[OpenAPI json](https://validator.andy-neal.com/swagger/v1/swagger.json)
 
 # Considerations:
 ## Verb choice:
